@@ -18,7 +18,7 @@
                 <button wire:click="create()" class="bg-green-700 text-white font-bold py-2 px-4 rounded my-3">Create
                     Posts</button>
                 @if($isModalOpen)
-                @include('livewire.create')
+                @include('livewire.form')
                 @endif
                 <table class="table-fixed w-full">
                     <thead>
