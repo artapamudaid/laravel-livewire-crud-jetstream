@@ -12,7 +12,7 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-jet-nav-link href="{{ route('post') }}" :active="request()->routeIs('posts')">
+                    <x-jet-nav-link href="{{ route('posts') }}" :active="request()->routeIs('posts')">
                         Posts
                     </x-jet-nav-link>
                 </div>

@@ -47,7 +47,7 @@ class PostCrud extends Component
         ]);
 
         Post::updateOrCreate([
-            'id' => $this->id
+            'id' => $this->post_id
         ], [
             'title' => $this->title,
             'body' => $this->body
@@ -62,7 +62,7 @@ class PostCrud extends Component
     public function edit($id)
     {
         $post = Post::findOrFail($id);
-        $this->id = $id;
+        $this->post_id = $id;
         $this->title = $post->title;
         $this->body = $post->body;
 
